@@ -1,0 +1,236 @@
+/* Hero Section Styling */
+.hero-slider {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .carousel-inner {
+    height: 100%;
+  }
+  .carousel-item {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .carousel-overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay with transparency */
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%, -40%);   /*changed it from transform: translate(-50%, -50%); to transform: translate(-15%, -40%); */
+    text-align: center;
+    color: white;
+    width: 100%; /* Ensure the caption takes full width */
+  }
+  .carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: inline-block; /* Ensures the title is inline and can be horizontally centered */
+  }
+  .carousel-caption p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .carousel-caption .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+  /* Custom Styles for About Section */
+#about {
+  background-color: #f8f9fa; /* Light background */
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#about .nav-tabs .nav-link {
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+}
+
+#about .nav-tabs .nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+#about .tab-pane h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#about .tab-pane p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#about .tab-pane .btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+/* Custom Styling for Our Services */
+#services {  
+  background-color: #f8f9fa; /* Light background for the section */
+}
+
+
+#services h2 {  
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+
+}
+
+#services .card {
+  border: rgb(from color r g b);
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#services .card-body i {
+  color: #ff00ae8d;
+}
+
+#services .card-body h5 {
+  font-size: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+#services .card-body p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#services .btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+/* Section Styling */
+.our-clothes {
+  background-color: #f9f9f9;
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Image Wrapper Styling */
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  transition: transform 0.3s ease;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.img-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+/* Middle Image Styling */
+.middle-img {
+  transform: translateY(-20px);
+}
+.img-wrapper:first-child {
+  transform: translateY(20px);
+}
+.img-wrapper:last-child {
+  transform: translateY(20px);
+}
+/* General Section Styling */
+.contact-us {
+  background-color: #f8f9fa;
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Form Styling */
+.contact-form-wrapper {
+  background: #ffffff;
+  border-radius: 20px;
+}
+.contact-form-wrapper form .form-control {
+  border-radius: 8px;
+}
+.contact-form-wrapper button {
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 0.75rem;
+}
+
+/* Map and Contact Details Styling */
+.map-wrapper {
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.contact-details {
+  background-color: #007bff;
+  color: white;
+  border-top: 3px solid #0056b3;
+  border-radius: 0 0 20px 20px;
+}
+.contact-details h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.contact-details p {
+  margin: 0.2rem 0;
+}
+/* Footer Styling */
+.footer {
+  background: #212529; /* Dark background */
+  color: #adb5bd; /* Light gray text */
+  font-size: 0.9rem;
+}
+.footer h5 {
+  color: white;
+  font-size: 1.2rem;
+}
+.footer a {
+  transition: color 0.3s ease;
+}
+.footer a:hover {
+  color: #007bff; /* Bootstrap primary color */
+}
+.footer .border-light {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
